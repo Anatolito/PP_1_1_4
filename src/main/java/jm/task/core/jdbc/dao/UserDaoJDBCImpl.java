@@ -8,16 +8,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserDaoJDBCImpl implements UserDao {
-    private static final String CREATE_TABLE = "CREATE TABLE IF NOT EXISTS pp_jdbc_h.users ("+
+    private static final String CREATE_TABLE = "CREATE TABLE IF NOT EXISTS users ("+
             " id BIGINT PRIMARY KEY NOT NULL AUTO_INCREMENT," +
             " name VARCHAR(45) NOT NULL," +
             " lastName VARCHAR(45) NOT NULL," +
             " age TINYINT)";
-    private static final String SAVE_USER = "INSERT INTO pp_jdbc_h.users(name,lastName,age)VALUES(?,?,?)";
-    private static final String REMOVE_USER = "DELETE FROM pp_jdbc_h.users WHERE id=?";
-    private static final String GET_USERS = "SELECT * FROM pp_jdbc_h.users";
-    private static final String CLEAN_TABLE = "DELETE FROM pp_jdbc_h.users";
-    private static final String DROP_TABLE = "DROP TABLE IF EXISTS pp_jdbc_h.users";
+    private static final String SAVE_USER = "INSERT INTO users(name,lastName,age)VALUES(?,?,?)";
+    private static final String REMOVE_USER = "DELETE FROM users WHERE id=?";
+    private static final String GET_USERS = "SELECT * FROM users";
+    private static final String CLEAN_TABLE = "DELETE FROM users";
+    private static final String DROP_TABLE = "DROP TABLE IF EXISTS users";
 
     public UserDaoJDBCImpl() {
         // by the condition of the task
