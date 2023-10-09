@@ -20,7 +20,7 @@ public class UserDaoJDBCImpl implements UserDao {
     private static final String DROP_TABLE = "DROP TABLE IF EXISTS users";
 
     public UserDaoJDBCImpl() {
-        // by the condition of the task
+
     }
 
     public void createUsersTable() {
